@@ -10,7 +10,7 @@ function AllMeetupsPage() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      ""
+      "https://my-first-react-project-17ced-default-rtdb.asia-southeast1.firebasedatabase.app/meetups.json"
     )
       .then((response) => {
         return response.json();

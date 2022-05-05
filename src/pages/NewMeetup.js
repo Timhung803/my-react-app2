@@ -5,7 +5,7 @@ function NewMeetupPage() {
   const navigate = useNavigate();
   function addMeetupHandler(meetupData) {
     fetch(
-      '',
+      'https://my-first-react-project-17ced-default-rtdb.asia-southeast1.firebasedatabase.app/meetups.json',
       {
         method: "POST",
         body: JSON.stringify(meetupData),
